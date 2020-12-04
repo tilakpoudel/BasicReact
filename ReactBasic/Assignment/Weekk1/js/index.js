@@ -1,3 +1,4 @@
+/*------------------Digtial Clock Section -----------*/
 // month name array
 const monthNames = [
   "Jan",
@@ -62,6 +63,10 @@ function checkTime(i) {
   }
   return i;
 }
+
+/*------------------ End of Digtial Clock Section -----------*/
+
+/*------------------  Area Calcualtion Section -----------*/
 
 // these js are for circle calculation
 function calculateCircle() {
@@ -140,6 +145,10 @@ function dislayErrorMsg(error_field_id, error_msg) {
 		</ul>`;
 }
 
+/*------------------ End of Circle Area Calcualation Section -----------*/
+
+/*------------------ Array Manipualtion Section -----------*/
+
 // array manipualtion code
 function arrayManipulation() {
   alert("For Array Manipulation Operation  Visit console ...");
@@ -173,3 +182,5 @@ function arrayManipulation() {
   //see the length of array
   console.log("Array lenght After deleting :" + favPlaceArray.length);
 }
+
+/*------------------ End of Array Manipulation  Section -----------*/
