@@ -11,7 +11,6 @@
   </head>
   <body onload="getCurrentTime()">
     <div class="main">
-
       <!-- display current time  -->
       <div class="clock">
         <div class="digital_clock">
@@ -62,7 +61,7 @@
         <!-- tips calcualtion -->
         <div class="tips_calculate_div">
           <h1>OK .. Its time for Tips Calculation ..</h1>
-            <div id="tips_error_div"></div>
+          <div id="tips_error_div"></div>
           <input
             class="tips_input"
             type="number"
@@ -86,7 +85,7 @@
             onkeyup="checkNumber('tips_percent_inp')"
             placeholder=" Tips % ...."
           />
-          <br>
+          <br />
           <button id="tips_btn" onclick="calcualteTips()">Calcualte</button>
           <ul id="circumfence_label">
             <li>
@@ -98,12 +97,49 @@
               <span class="tips_result" id="tips_percent_msg"> </span>
             </li>
             <li>
-              You Earned : 
+              You Earned :
               <span class="tips_result" id="tips_amount"> </span>
             </li>
           </ul>
         </div>
+      </div>
 
+      <!-- footer content -->
+      <div class="footer">
+        <div class="AboutUs">
+          <span id="arrayManipulation" onmouseover="arrayManipulation()">
+            Looking Something More ??
+          </span>
+        </div>
+        <div class="icon" id="buttonIcon">
+          <a href="https://github.com/tilakpoudel/" target="_blank">
+            <img
+              class="socialMediaIcon"
+              id="githubIcon"
+              src="images/github.png"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tilak-poudel-654742159/"
+            target="_blank"
+          >
+            <img
+              class="socialMediaIcon"
+              id="linkedInIcon"
+              src="images/linkedin.png"
+            />
+          </a>
+          <a href="https://tilakpoudel.medium.com/" target="_blank">
+            <img
+              class="socialMediaIcon"
+              id="mediumIcon"
+              src="images/medium.png"
+            />
+          </a>
+          <a href="https://www.facebook.com/tilak.poudel.313" target="_blank">
+            <img class="socialMediaIcon" id="fbIcon" src="images/fb.png" />
+          </a>
+        </div>
       </div>
     </div>
   </body>
