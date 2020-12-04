@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS WarmUp</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body onload="getCurrentTime()">
+    <div class="main">
+      <!-- display current time  section  -->
+      <div class="clock">
+        <div class="digital_clock">
+          <h1 id="time_headline">!!! Time and Tides Waits None !!!</h1>
+          <div id="current_time_div">
+            <p id="time_id">
+              <span class="date" id="date_id"></span>
+              &nbsp;&nbsp;&nbsp;
+              <span class="time" id="current_time_span"></span>
+              &nbsp;&nbsp;&nbsp;
+              <br />
+              <span class="date" id="day"> </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--End of  current time section   -->
+
+      <br />
+
+      <!-- display area calualtion   section  -->
+
+      <div class="flex-container">
+        <!-- circle area calcualtion  -->
+        <div class="circle">
+          <h1>Let Crack the Circle....</h1>
+          <input
+            type="number"
+            name="radius"
+            id="radius"
+            step="any"
+            min="0"
+            required
+            placeholder="Enter Radius ...."
+            onkeyup="calculateCircle()"
+          />
+          <ul id="circumfence_label">
+            <li>
+              Radius: <span class="circle_result" id="circle_radius"> </span>
+            </li>
+            <li>
+              Circumfence:
+              <span class="circle_result" id="circle_circumfence"> </span>
+            </li>
+            <li>
+              Area:
+              <span class="circle_result" id="circle_area"> </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- tips calcualtion -->
+        <div class="tips_calculate_div">
+          <h1>OK .. Its time for Tips Calculation ..</h1>
+          <div id="tips_error_div"></div>
+          <input
+            class="tips_input"
+            type="number"
+            name="total_amt"
+            id="total_amt"
+            step="any"
+            min="0"
+            required
+            onkeyup="checkNumber('total_amt')"
+            placeholder=" Total amt ...."
+          />
+          <input
+            type="number"
+            class="tips_input"
+            name="tips_percent"
+            id="tips_percent_inp"
+            step="any"
+            min="0"
+            max="100"
+            required
+            onkeyup="checkNumber('tips_percent_inp')"
+            placeholder=" Tips % ...."
+          />
+          <br />
+          <button id="tips_btn" onclick="calcualteTips()">Calcualte</button>
+          <ul id="circumfence_label">
+            <li>
+              Total Amount :
+              <span class="tips_result" id="total_amount"> </span>
+            </li>
+            <li>
+              Tips(%) :
+              <span class="tips_result" id="tips_percent_msg"> </span>
+            </li>
+            <li>
+              You Earned :
+              <span class="tips_result" id="tips_amount"> </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--End of  area calualtion  section   -->
+
+      <!-- footer content -->
+      <div class="footer">
+        <div class="AboutUs">
+          <span id="arrayManipulation" onmouseover="arrayManipulation()">
+            Looking Something More ??
+          </span>
+        </div>
+        <div class="icon" id="buttonIcon">
+          <a href="https://github.com/tilakpoudel/" target="_blank">
+            <img
+              class="socialMediaIcon"
+              id="githubIcon"
+              src="images/github.png"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tilak-poudel-654742159/"
+            target="_blank"
+          >
+            <img
+              class="socialMediaIcon"
+              id="linkedInIcon"
+              src="images/linkedin.png"
+            />
+          </a>
+          <a href="https://tilakpoudel.medium.com/" target="_blank">
+            <img
+              class="socialMediaIcon"
+              id="mediumIcon"
+              src="images/medium.png"
+            />
+          </a>
+          <a href="https://www.facebook.com/tilak.poudel.313" target="_blank">
+            <img class="socialMediaIcon" id="fbIcon" src="images/fb.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
