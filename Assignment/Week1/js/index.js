@@ -25,7 +25,6 @@ const weekDays = [
   "Friday",
   "Saturday",
 ];
-
 // get the current time
 function getCurrentTime() {
   let today = new Date();
@@ -55,7 +54,6 @@ function getCurrentTime() {
     getCurrentTime();
   }, 500);
 }
-
 // appends 0 for single digit number
 function checkTime(i) {
   if (i < 10) {
@@ -63,7 +61,6 @@ function checkTime(i) {
   }
   return i;
 }
-
 /*------------------ End of Digtial Clock Section -----------*/
 
 /*------------------  Area Calcualtion Section -----------*/
@@ -145,7 +142,7 @@ function dislayErrorMsg(error_field_id, error_msg) {
 		</ul>`;
 }
 
-/*------------------ End of Circle Area Calcualation Section -----------*/
+/*------------------ End of tips Calcualation Section -----------*/
 
 /*------------------ Array Manipualtion Section -----------*/
 
